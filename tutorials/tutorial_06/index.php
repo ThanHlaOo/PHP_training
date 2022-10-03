@@ -14,7 +14,7 @@
     <div class="container">
         <h1>Tutorial 06</h1>
         <form action="<?= $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
-            <label for="photo">Choose Image</label><input type="file" name="photo" id="photo" required>
+            <label for="photo">Choose Image</label><input type="file" name="photo" id="photo" accept="image/png, image/jpeg, image/jpg, image/gif" required>
             <br><br>
             <label for="path">Choose Directory</label><input type="text" name="path" id="path" required>
             <input type="submit" name="submit" value="Upload">

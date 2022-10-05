@@ -10,25 +10,25 @@
 
 <body>
     <?php
-    $row = 6;
-    for ($outer = 1; $outer <= $row; $outer++) {
-        for ($space = 1; $space <= $row-$outer; $space++) {
-            echo "&nbsp;&nbsp;";
+        $row = 6;
+        for ($outer = 1; $outer <= $row; $outer++) {
+            for ($space = 1; $space <= $row - $outer; $space++) {
+                echo "&nbsp;&nbsp;";
+            }
+            for ($star = 1; $star <= $outer * 2 - 1; $star++) {
+                echo "*";
+            }
+            echo "<br>";
         }
-        for ($star = 1; $star <= $outer * 2 - 1; $star++) {
-            echo "*";
+        for ($outer = 1; $outer <= $row - 1; $outer++) {
+            for ($space = 1; $space <= $outer; $space++) {
+                echo "&nbsp;&nbsp;";
+            }
+            for ($star = 1; $star <= ($row - $outer) * 2 - 1; $star++) {
+                echo "*";
+            }
+            echo "<br>";
         }
-        echo "<br>";
-    }
-    for ($outer = 1; $outer <= $row-1; $outer++) {
-        for ($space = 1; $space <= $outer; $space++) {
-            echo "&nbsp;&nbsp;";
-        }
-        for ($star = 1; $star <= ($row-$outer)*2-1; $star++) {
-            echo "*";
-        }
-        echo "<br>";
-    }
     ?>
 </body>
 

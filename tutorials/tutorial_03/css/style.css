@@ -1,0 +1,41 @@
+.container {
+    margin-left: 50px;
+}
+
+.danger {
+    color: red;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 10px;
+}
+
+form {
+    margin: 20px 0;
+}
+
+.btn {
+    margin-top: 10px;
+    background-color: #22d1ee;
+    color: #000000;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    border: 1px solid #000000;
+    color: #22d1ee;
+    background-color: #ffffff;
+}
+
+.output {
+    font-size: 18px;
+    font-weight: 900;
+}

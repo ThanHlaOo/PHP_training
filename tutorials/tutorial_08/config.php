@@ -20,6 +20,7 @@
             firstname VARCHAR(50) NOT NULL,
             lastname VARCHAR(50) NOT NULL,
             email VARCHAR(50),
+            age INT(10),
             phone VARCHAR(50),
             address VARCHAR(50)
             )";

@@ -52,6 +52,12 @@
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Age</span>
+                </div>
+                <input type="text" class="form-control" name="age" value="<?= isset($record['age']) ? $record['age'] : '' ?>">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Address</span>
                 </div>
                 <input type="text" class="form-control" name="address" value="<?= isset($record['address']) ? $record['address'] : '' ?>">
@@ -64,6 +70,9 @@
         <?php endif ?>
         <?php if (isset($_GET['empty'])) : ?>
             <div class="alert alert-danger mt-5 text-center">Input fields cannot be empty!</div>
+        <?php endif ?>
+        <?php if (isset($_GET['ageError'])) : ?>
+            <div class="alert alert-danger mt-5 text-center">Please enter Valide Age </div>
         <?php endif ?>
     </div>
 </body>

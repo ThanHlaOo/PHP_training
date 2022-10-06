@@ -28,6 +28,11 @@
         } else {
             $lname = $_POST['lastname'];
         }
+        if (empty(validateInput($_POST['age']))) {
+            $empty = true;
+        } else {
+            $age = $_POST['age'];
+        }
         if (empty(validateInput($_POST['email']))) {
             $empty = true;
         } else {
@@ -47,7 +52,11 @@
 
 
         if (!$empty) {
-            $sql = "UPDATE students SET firstname='$fname' , lastname='$lname', email='$email', phone='$phone', address='$address'
+            if(!preg_match("/^[0-9]+$/", $age)){
+                header("location: edit.php?ageError=true");
+                exit();
+            }
+            $sql = "UPDATE students SET firstname='$fname' , lastname='$lname', email='$email', age='$age', phone='$phone',address='$address'
             WHERE id = $id";
 
             if ($conn->query($sql)) {
@@ -59,6 +68,7 @@
             }
             $conn->close();
         } else {
+            //echo "empty";
             header("location: edit.php?empty=true&id=$id");
         }
     }

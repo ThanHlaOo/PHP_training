@@ -22,7 +22,7 @@
             email VARCHAR(50),
             age INT(10),
             phone VARCHAR(50),
-            address VARCHAR(50)
+            address TEXT
             )";
             mysqli_select_db($conn, 'my_db');
         if ($conn->query($table_sql) === true) {

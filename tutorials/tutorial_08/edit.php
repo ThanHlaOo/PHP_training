@@ -24,7 +24,7 @@
             <input type="text" name="id" hidden value="<?= isset($record['id']) ? $record['id'] : 0 ?>">
             <div class="d-flex justify-content-between mb-4">
                 <h3 class="m-0">Update</h3>
-                <a href="index.php" class="btn btn-outline-secondary btn-sm">HOME</a>
+                <a href="profile.php" class="btn btn-outline-secondary btn-sm">HOME</a>
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">

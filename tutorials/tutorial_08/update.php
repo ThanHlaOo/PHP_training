@@ -61,7 +61,7 @@
 
             if ($conn->query($sql)) {
                 //echo "success";
-                header("location: index.php?update=true");
+                header("location: profile.php?update=true");
             } else {
                 //echo "error";
                 header("location: edit.php?error=true");

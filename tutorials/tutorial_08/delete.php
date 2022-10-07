@@ -7,7 +7,7 @@
     }
 
     if ($conn->query($sql)) {
-        header("location: index.php?delete=$id");
+        header("location: profile.php?delete=$id");
     } else {
-        header("location: index.php?error=true");
+        header("location: profile.php?error=true");
     }

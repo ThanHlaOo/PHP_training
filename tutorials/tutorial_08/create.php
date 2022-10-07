@@ -14,7 +14,7 @@
         <form action="insert.php" method="POST" class="mt-5">
             <div class="d-flex justify-content-between mb-4">
                 <h3 class="m-0">Create a Student</h3>
-                <a href="index.php" class="btn btn-outline-secondary btn-sm">HOME</a>
+                <a href="profile.php" class="btn btn-outline-secondary btn-sm">HOME</a>
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">

@@ -48,7 +48,7 @@
         <form action="<?= $_SERVER['PHP_SELF'] ?>" method="GET">
             <div class="input-group input-group-sm mb-3">
                 <label for="data">Enter Data to QR:</label>
-                <input type="text" name="data" class="form-control mb-3 ml-3" value="<?= isset($_GET['success']) ? '' : htmlspecialchars($_GET['data']) ?>" placeholder="Please Type Something!">
+                <input type="text" name="data" class="form-control mb-3 ml-3" value="<?= isset($_GET['success']) ? '' : '' ?>" placeholder="Please Type Something!">
             </div>
             <input type="submit" value="SAVE" name="submit" class="btn btn-primary mb-4">
         </form>

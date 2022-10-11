@@ -23,7 +23,6 @@
             email VARCHAR(50),
             age INT(10),
             phone VARCHAR(50),
-<<<<<<< HEAD
             address Text
             );";
         $user_sql = "CREATE TABLE IF NOT EXISTS users
@@ -41,12 +40,6 @@
              expired VARCHAR(32)       
          );';
         if ($conn->query($table_sql)  && $conn->query($user_sql) && $conn->query($otlink_sql)) {
-=======
-            address TEXT
-            )";
-            mysqli_select_db($conn, 'my_db');
-        if ($conn->query($table_sql) === true) {
->>>>>>> f35a5d6c15bbbb7aba6bf7936b10bc359780eb92
         echo "Table created successfully. <a href='index.php'>HOME PAGE</a>";
         } else {
         echo "Error creating table: " . $conn->error;
